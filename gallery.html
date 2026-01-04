@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery | My Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylen.css">
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+</head>
+
+<body class="gallery">
+
+<header class="navbar">
+  <div class="logo">Aqilah</div>
+  <nav>
+    <ul>
+      <li><a href="indexn.html">Home</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <input type="text" id="searchInput" placeholder="Search page">
+</header>
+
+<section class="content">
+<h2 class="frijole-title">Gallery</h2>
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="gambar 1.jpeg" style="width:100%">
+    <div class="text">CLASSMATE KCDIM1105B</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="gambar 4.jpeg" style="width:100%">
+    <div class="text">INTERNSHIP AT LADA</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="gambar 5.jpeg" style="width:100%">
+    <div class="text">FAVOURITE CAT</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="choose-title">Choose picture you want to see</div>
+<div class="gallery-grid category-only">
+  <div class="border-frame">
+    <div class="gallery-card" onclick="showGallery('cat')">
+      <img src="comot.jpeg" alt="Cat">
+      <div class="overlay"><span>🐱 Cat</span></div>
+    </div>
+    <div class="gallery-card" onclick="showGallery('friends')">
+      <img src="gambar 3.jpeg" alt="Friends">
+      <div class="overlay"><span>👯 Friends</span></div>
+    </div>
+    <div class="gallery-card" onclick="showGallery('myself')">
+      <img src="lala.jpg" alt="Myself">
+      <div class="overlay"><span>👩 Myself</span></div>
+    </div>
+    <div class="gallery-card" onclick="showGallery('internship')">
+      <img src="LADA.webp" alt="Internship">
+      <div class="overlay"><span>🏢 Internship</span></div>
+    </div>
+  </div>
+</div>
+
+<div id="gallery-section">
+  <div class="big-gallery cat" style="display:none;">
+    <h3>🐱 Cat</h3>
+    <div class="product-grid">
+      <img src="comot.jpeg">
+      <img src="batbat.jpeg">
+      <img src="gemok.jpeg">
+      <img src="meow.jpeg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+
+</div>
+
+
+  <div class="big-gallery friends">
+    <h3>👯 Friends</h3>
+    <div class="product-grid">
+      <img src="gambar 3.jpeg">
+      <img src="gambar 2.jpeg">
+      <img src="gambar 1.jpeg">
+      <img src="smk.jpg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+
+  <div class="big-gallery myself">
+    <h3>👩 Myself</h3>
+    <div class="product-grid">
+      <img src="lala.jpg">
+      <img src="work.jpeg">
+      <img src="pantai.jpeg">
+      <img src="mirror.jpeg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+
+  <div class="big-gallery internship">
+    <h3>🏢 Internship</h3>
+    <div class="product-grid">
+      <img src="end.jpeg">
+      <img src="in.jpeg">
+      <img src="ter.jpeg">
+      <img src="n.jpeg">
+    </div>
+    <div class="back-btn" onclick="backToMain()">← Back</div>
+  </div>
+</div>
+
+</section>
+
+<footer>
+<p>© 2025 Aqilah | Academic Purpose</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="slideshow.js"></script>
+</body>
+</html>
